@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Race>
+	<RaceItem>
+		<Name>Elf</Name>
+		<Book>PHB</Book>
+		<AbilityDefault>DEX</AbilityDefault>
+		<AbilityAdditional>INT</AbilityAdditional>
+		<AbilityAdditional>WIS</AbilityAdditional>
+		<Speed>7</Speed>
+		<Skill>Nature</Skill>
+		<Skill>Perception</Skill>
+		<Language>Elven</Language>
+		<Vision>Low-Light</Vision>
+		<RacialPower>Elven Accuracy</RacialPower>
+		<RacialFeature>
+			<WeaponProfficiency>Longbow</WeaponProfficiency>
+		</RacialFeature>
+		<RacialFeature>
+			<WeaponProfficiency>Shortbow</WeaponProfficiency>
+		</RacialFeature>
+		<RacialFeature>Wild Step</RacialFeature>
+		<RacialFeature>Group Awareness</RacialFeature>
+	</RaceItem>
+	<RaceItem>
+		<Name>Dwaarf</Name>
+		<Book>PHB</Book>
+		<AbilityDefault>CON</AbilityDefault>
+		<AbilityAdditional>STR</AbilityAdditional>
+		<AbilityAdditional>WIS</AbilityAdditional>
+		<Speed>5</Speed>
+		<Skill>Dungeoneering</Skill>
+		<Skill>Endurance</Skill>
+		<Language>Dwarven</Language>
+		<Vision>Low-Light</Vision>
+		<RacialFeature>
+			<WeaponProfficiency>Throwing Hammer</WeaponProfficiency>
+		</RacialFeature>
+		<RacialFeature>
+			<WeaponProfficiency>Warhammer</WeaponProfficiency>
+		</RacialFeature>
+		<RacialFeature>Cast-Iron Stomach</RacialFeature>
+		<RacialFeature>Dwarven Resilience</RacialFeature>
+		<RacialFeature>Encumbered Speed</RacialFeature>
+		<RacialFeature>Stand Your Ground</RacialFeature>
+	</RaceItem>
+</Race>
