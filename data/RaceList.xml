@@ -11,19 +11,15 @@
 		<Skill>Nature</Skill>
 		<Skill>Perception</Skill>
 		<Language>Elven</Language>
-		<Vision>Low-Light</Vision>
+		<Vision>LowLight</Vision>
 		<RacialPower>Elven Accuracy</RacialPower>
-		<RacialFeature>
-			<WeaponProfficiency>Longbow</WeaponProfficiency>
-		</RacialFeature>
-		<RacialFeature>
-			<WeaponProfficiency>Shortbow</WeaponProfficiency>
-		</RacialFeature>
+		<WeaponProfficiency>Longbow</WeaponProfficiency>
+		<WeaponProfficiency>Shortbow</WeaponProfficiency>
 		<RacialFeature>Wild Step</RacialFeature>
 		<RacialFeature>Group Awareness</RacialFeature>
 	</RaceItem>
 	<RaceItem>
-		<Name>Dwaarf</Name>
+		<Name>Dwarf</Name>
 		<Book>PHB</Book>
 		<AbilityDefault>CON</AbilityDefault>
 		<AbilityAdditional>STR</AbilityAdditional>
@@ -32,13 +28,9 @@
 		<Skill>Dungeoneering</Skill>
 		<Skill>Endurance</Skill>
 		<Language>Dwarven</Language>
-		<Vision>Low-Light</Vision>
-		<RacialFeature>
-			<WeaponProfficiency>Throwing Hammer</WeaponProfficiency>
-		</RacialFeature>
-		<RacialFeature>
-			<WeaponProfficiency>Warhammer</WeaponProfficiency>
-		</RacialFeature>
+		<Vision>LowLight</Vision>
+		<WeaponProfficiency>Throwing Hammer</WeaponProfficiency>
+		<WeaponProfficiency>Warhammer</WeaponProfficiency>
 		<RacialFeature>Cast-Iron Stomach</RacialFeature>
 		<RacialFeature>Dwarven Resilience</RacialFeature>
 		<RacialFeature>Encumbered Speed</RacialFeature>

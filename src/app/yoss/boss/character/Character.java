@@ -29,7 +29,7 @@ public class Character {
 		this.experience = experience;
 		this.level = Level.countLevel(experience);
 		this.charClass = new CharacterClass("Ranger");
-		this.race = new Race("Elf");
+		this.race = new Race();
 		
 	}
 
@@ -38,7 +38,7 @@ public class Character {
 
 	public String displayString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(String.format("%-10s%-10s%-10s%-10s%3d%7d", name, party, race.getName(), charClass.getName(), level, experience));
+		sb.append(String.format("%-10s%-10s%-10s%-10s%3d%7d", name, party, race.name, charClass.getName(), level, experience));
 		
 		
 		return sb.toString();
