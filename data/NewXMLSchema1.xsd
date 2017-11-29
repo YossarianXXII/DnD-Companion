@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Power" type="power"/>
+
+  <xs:complexType name="power">
+    <xs:sequence>
+      <xs:element name="usage" type="usageType" minOccurs="0"/>
+      <xs:element name="action" type="actionType" minOccurs="0"/>
+      <xs:element name="source" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="target" type="xs:string" minOccurs="0"/>
+      <xs:element name="area" type="xs:string" minOccurs="0"/>
+      <xs:element name="attack" type="attack" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="requirement" type="xs:string" minOccurs="0"/>
+      <xs:element name="trigger" type="xs:string" minOccurs="0"/>
+      <xs:element name="hit" type="xs:string" minOccurs="0"/>
+      <xs:element name="effect" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string"/>
+    <xs:attribute name="type" type="xs:string"/>
+    <xs:attribute name="charClass" type="xs:string"/>
+    <xs:attribute name="level" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="attack">
+    <xs:sequence>
+      <xs:element name="source" type="ability" minOccurs="0"/>
+      <xs:element name="target" type="defense" minOccurs="0"/>
+      <xs:element name="forType" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="usageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AtWill"/>
+      <xs:enumeration value="Encounter"/>
+      <xs:enumeration value="Daily"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="actionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Standard"/>
+      <xs:enumeration value="Move"/>
+      <xs:enumeration value="Minor"/>
+      <xs:enumeration value="Free"/>
+      <xs:enumeration value="ImmediateReaction"/>
+      <xs:enumeration value="ImmediateInterrupt"/>
+      <xs:enumeration value="Opportunity"/>
+      <xs:enumeration value="NoAction"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ability">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="STR"/>
+      <xs:enumeration value="CON"/>
+      <xs:enumeration value="DEX"/>
+      <xs:enumeration value="INT"/>
+      <xs:enumeration value="WIS"/>
+      <xs:enumeration value="CHA"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="defense">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AC"/>
+      <xs:enumeration value="Fort"/>
+      <xs:enumeration value="Ref"/>
+      <xs:enumeration value="Will"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

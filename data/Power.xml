@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Power>
+<PowerItem name="Elven Accuracy" level="0" type="race">
+	<Usage>Encounter</Usage>
+	<ActionType>Free</ActionType>
+	<Trigger>The user makes an attack roll but dislikes result.</Trigger>
+	<Effect>The user rerolls the attack and must use the new result.</Effect>
+</PowerItem>
+<PowerItem name="Hit and run" level="1" type="class">
+	<Usage>AtWill</Usage>
+	<Class>Ranger</Class>
+	<ActionType>Standard</ActionType>
+	<Attack ability="STR" vs="AC"></Attack>
+	<Hit weapon="1" bonus="STR"/>
+	<Target>One creature</Target>
+	<Effect>If you move in the same turn after this attack, leaving the first square adjacent 
+	to target does not provoke an opportunity attack.</Effect>
+	
+</PowerItem>
+</Power>

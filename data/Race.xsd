@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Race" xmlns:tns="http://www.example.org/Race" elementFormDefault="qualified">
+
+
+
+    <element name="Race" type="tns:Race"></element>
+
+    <complexType name="Race">
+    	<sequence maxOccurs="unbounded" minOccurs="1">
+    		<element name="RaceItem" type="tns:RaceItem"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="RaceItem">
+    	<sequence>
+    		<element name="Name" type="string"></element>
+    		<element name="Book" type="string"></element>
+    		<element name="Speed" type="int"></element>
+    		<element name="Language">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="Abyssal"></enumeration>
+    					<enumeration value="Common"></enumeration>
+    					<enumeration value="DeepSpeech"></enumeration>
+    					<enumeration value="Draconic"></enumeration>
+    					<enumeration value="Dwarven"></enumeration>
+    					<enumeration value="Elven"></enumeration>
+    					<enumeration value="Giant"></enumeration>
+    					<enumeration value="Goblin"></enumeration>
+    					<enumeration value="Primordial"></enumeration>
+    					<enumeration value="Supernal"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="Vision">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="Normal"></enumeration>
+    					<enumeration value="LowLight"></enumeration>
+    					<enumeration value="DarkVision"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+</schema>
